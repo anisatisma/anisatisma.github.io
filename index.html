@@ -2,8 +2,135 @@
 <html>
 <head>
 	<title>Pembelajaran Program</title>
-	<link rel="stylesheet" href="../CSS/style.css">
-	<link rel="icon" href="../ICON/desktop.PNG">
+	<style>
+		body{
+	background-image: url(../IMAGE/body7.PNG);
+}
+#wrapper{
+	width:1300px;
+	margin: auto;
+}
+#header{
+	height:200px;/*lebar*/
+	width: 1300px;/*tinggi*/
+}
+.head{ /*gambar header*/
+	height:200px;
+	width: 1300px;
+	margin-bottom: 20px; /*jarak kotak bawah*/
+	margin-top: 15px; /*jarak kotak atas*/
+	box-shadow: 5px 5px 5px rgba(0,0,0, .75); 
+}
+.menu{ /*ukuran navbar*/
+	height: 40px;
+	width: 1300px;
+	background-color: #556273;
+	margin-top: 23px;
+	margin-bottom: 8px;
+	bottom: 0px; /*jarak bawah*/
+	font-family: monospace;
+	font-weight: bold; /*ketebalan huruf pada menu*/
+	font-size: 20px;
+	color: white;
+	box-shadow: 5px 5px 5px rgba(0,0,0, .75);
+}
+.nav{ /*pengaturan menu navbar*/
+	list-style: none;
+	text-align: center;
+}
+.nav li{ /*dropdown1*/
+	display: inline-block;
+	float: left;
+	position: relative;
+	background: #556273;
+	border-right: 1px solid;
+}
+.nav li a{ /*dropdown1*/
+	display: inline-block;
+	width: 250px;
+	text-decoration: none;
+	line-height: 40px;
+	color: #fff;
+}
+.nav li li{ /*dropdown2*/
+	float: left;
+}
+.nav li:hover{
+	background: lightskyblue;
+}
+.nav ul{ /*dropdown2*/
+	position: absolute;
+	display: none;
+	padding: 0;
+	border-top: 1px solid;
+	border-left: 1px solid;
+}
+.nav li:hover ul ul{ /*dropdown2*/
+	display: none;
+}
+.nav li:hover ul{ /*dropdown1*/
+	display: block;
+	position: absolute;
+}
+.nav li li:hover ul{ /*dropdown2*/
+	margin-top: -40px;
+	margin-left: 250px; 
+	display: block;
+}
+#content{
+	padding: 15px;
+	background:#556273;
+	margin-top: 3px;
+	box-shadow: 10px 5px 5px rgba(0,0,0, .75);
+}
+#artikel{		
+	height: 1000px;
+	width: 1270px;
+	float: top;
+	background: white;
+}
+#footer{
+	height: 40px;
+	width: 1300px;
+	background-color: #556273;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	line-height: 50px;
+	bottom: 0px;
+	text-align: center;
+	font-family: monospace;
+	font-weight: bold;
+	font-size: 20px;
+	color: white;
+	box-shadow: 5px 5px 5px rgba(0,0,0, .75);
+}
+h1{
+	font-family: arial;
+	padding-left: 20px;
+}
+h2{
+	font-style: italic;
+	color: grey;
+	padding-left: 20px;
+}
+h3{
+	font-family: arial;
+	padding-left: 20px;
+}
+p{
+	font-family: arial;
+	padding-top: 5px;
+	padding-left: 20px;
+	font-size: 18px;
+	margin-right: 10px;
+}
+a{
+	text-decoration: none;
+	color: black;
+	font-size: 15px;
+}
+
+	</style>
 </head>
 <body>
 	<div id="wrapper">
@@ -12,30 +139,30 @@
 		</div>
 		<div class ="menu">
 		<ul class="nav">
-			<li><a href="home.html">HOME</a></li>
+			<li><a href="">HOME</a></li>
 			<li><a href="">PROGRAMMING</a>
 				<ul>
 					<li><a>Website</a>
 						<ul> 
-							<li><a href="pengertianwb.html">Pengertian</li></a>
-							<li><a href="bhswb.html">Bahasa Pemrograman</li></a>
+							<li><a href="">Pengertian</li></a>
+							<li><a href="">Bahasa Pemrograman</li></a>
 						</ul>
 					</li>
 					<li><a>Mikrokontroler</a>
 						<ul>
-							<li><a href="pengertianmk.html">Pengertian</li></a>
-							<li><a href="bhsmk.html">Bahasa Pemrograman</li></a>
+							<li><a href="">Pengertian</li></a>
+							<li><a href="">Bahasa Pemrograman</li></a>
 						</ul>
 					</li>
 					<li><a>Android</a>
 						<ul>
-							<li><a href="pengertianand.html">Pengertian</li></a>
-							<li><a href="bhsand.html">Bahasa Pemrograman</li></a>
+							<li><a href="">Pengertian</li></a>
+							<li><a href="b">Bahasa Pemrograman</li></a>
 						</ul>
 					</li>
 				</ul>
 			</li>
-			<li><a href="news.html">NEWS</li></a>
+			<li><a href="">NEWS</li></a>
 		</ul>
 		</div>
 
